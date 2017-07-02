@@ -12,3 +12,7 @@ ratings:
   paths:
   - "**.js"
   - "**.vue"
+exclude_paths:
+- "README.md"
+- "LICENSE"
+- "yarn.lock"
