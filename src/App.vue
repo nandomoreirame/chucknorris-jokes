@@ -41,7 +41,7 @@ export default {
   data: function () {
     return {
       joke: [],
-      pageTitle: "Chuck Norris jokes",
+      pageTitle: 'Chuck Norris jokes',
       loading: false,
       shareText: 'Chuck Norris ordered you to share this Joke!',
       shareHashtags: 'chucknorris,chucknorrisjoke',
@@ -49,24 +49,24 @@ export default {
       links: {
         makebyURL: 'https://nandomoreira.me/',
         vuejsURL: 'https://vuejs.org/',
-        chucknorrisURL: 'https://api.chucknorris.io',
+        chucknorrisURL: 'https://api.chucknorris.io'
       }
     }
   },
   created () {
-    document.title = `${this.pageTitle} - by ${this.links.makebyURL}`;
+    document.title = `${this.pageTitle} - by ${this.links.makebyURL}`
   },
-  mounted() {
+  mounted () {
     this.loading = true
     this.updateJoke()
   },
   methods: {
-    humanizeURL(url) {
+    humanizeURL (url) {
       return url
         .replace(/^https?:\/\//, '')
         .replace(/\/$/, '')
     },
-    updateShareURL(value) {
+    updateShareURL (value) {
       const shareURL = 'https://twitter.com/share'
       let url = encodeURI(`${window.location.href}`)
       let text = encodeURI(`${value}`)
