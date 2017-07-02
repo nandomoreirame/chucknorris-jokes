@@ -5,12 +5,13 @@
   "author": "Fernando Moreira <nandomoreira.me@gmail.com>",
   "private": true,
   "scripts": {
-    "watchify": "watchify -vd -p browserify-hmr -e src/main.js -o .tmp/assets/build.js",
-    "copy": "cp -R dist/ .tmp/",
-    "serve": "http-server -o -c 1 -a localhost .tmp/",
-    "dev": "npm run copy && npm-run-all --parallel watchify serve",
+    "watchify": "watchify -vd -p browserify-hmr -e src/main.js -o dist/assets/build.js",
+    "copy": "mkdir -p gh-pages && cp -R dist/ gh-pages/",
+    "serve": "http-server -o -c 1 -a localhost dist/",
+    "dev": "npm-run-all --parallel watchify serve",
     "lint": "eslint --ext .js,.vue src",
-    "build": "npm run copy && cross-env NODE_ENV=production browserify -g envify -p [ vueify/plugins/extract-css -o .tmp/assets/build.css ] -e src/main.js | uglifyjs -c warnings=false -m > .tmp/assets/build.js",
+    "build": "cross-env NODE_ENV=production browserify -g envify -p [ vueify/plugins/extract-css -o dist/assets/build.css ] -e src/main.js | uglifyjs -c warnings=false -m > dist/assets/build.js",
+    "deploy": "npm run copy && cross-env NODE_ENV=production browserify -g envify -p [ vueify/plugins/extract-css -o gh-pages/assets/build.css ] -e src/main.js | uglifyjs -c warnings=false -m > gh-pages/assets/build.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "browserify": {

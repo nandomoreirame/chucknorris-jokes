@@ -4,6 +4,7 @@ dist/assets/build.js
 dist/assets/build.css
 yarn-error.log
 npm-debug.log
+gh-pages/
 
 # Editor directories and files
 .vscode
