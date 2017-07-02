@@ -1,4 +1,4 @@
-# Chuck Norris jokes
+# Chuck Norris jokes [![Build Status](https://travis-ci.org/nandomoreirame/chucknorris.jokes.svg?branch=master)](https://travis-ci.org/nandomoreirame/chucknorris.jokes)
 
 > A Vue.js project
 
