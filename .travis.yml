@@ -9,13 +9,9 @@ cache:
   yarn: true
   directories:
     - "node_modules"
-before_script: "cp -R dist gh-pages"
-script: "yarn deploy"
-after_script: "ls -lah dist"
-before_deploy: "ls -lah gh-pages"
+script: "yarn build"
 deploy:
   provider: pages
   skip_cleanup: false
   github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
-  local_dir: gh-pages
-after_deploy: "ls -lah gh-pages"
+  local_dir: dist

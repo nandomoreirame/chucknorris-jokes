@@ -10,7 +10,6 @@
     "dev": "npm-run-all --parallel watchify serve",
     "lint": "eslint --ext .js,.vue src",
     "build": "cross-env NODE_ENV=production browserify -g envify -p [ vueify/plugins/extract-css -o dist/assets/build.css ] -e src/main.js | uglifyjs -c warnings=false -m > dist/assets/build.js",
-    "deploy": "cross-env NODE_ENV=production browserify -g envify -p [ vueify/plugins/extract-css -o gh-pages/assets/build.css ] -e src/main.js | uglifyjs -c warnings=false -m > gh-pages/assets/build.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "browserify": {
