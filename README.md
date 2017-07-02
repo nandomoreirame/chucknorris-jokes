@@ -2,6 +2,8 @@
 
 > A Vue.js project
 
+![Chuck Norris jokes - A Vue.js project](/ChuckNorris.jokes.png)
+
 ## Build Setup
 
 ``` bash
@@ -22,3 +24,7 @@ npm test
 ```
 
 For more information see the [docs for vueify](https://github.com/vuejs/vueify).
+
+### Copyright and license
+
+It is under [the MIT license](/LICENSE).
