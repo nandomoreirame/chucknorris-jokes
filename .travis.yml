@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - "iojs"
+  - "6"
+branches:
+  only:
+    - master
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  - GH_USER="Fernando Moreira"
+  - GH_EMAIL="nandomoreira.me@gmail.com"
+cache:
+  yarn: true
+  directories:
+    - "node_modules"
