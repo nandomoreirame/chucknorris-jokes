@@ -44,7 +44,6 @@ export default {
       pageTitle: "Chuck Norris jokes",
       loading: false,
       shareText: 'Chuck Norris ordered you to share this Joke!',
-      shareURL: 'https://twitter.com/share',
       shareHashtags: 'chucknorris,chucknorrisjoke',
       loadingText: 'Chuck Norris ordered you to wait...',
       links: {
@@ -68,9 +67,10 @@ export default {
         .replace(/\/$/, '')
     },
     updateShareURL(value) {
+      const shareURL = 'https://twitter.com/share'
       let url = encodeURI(`${window.location.href}`)
       let text = encodeURI(`${value}`)
-      return `${this.shareURL}?url=${url}&text=${text}&hashtags=${this.shareHashtags}&via=umdevux`
+      return `${shareURL}?url=${url}&text=${text}&hashtags=${this.shareHashtags}&via=umdevux`
     },
     updateJoke () {
       this.$http.get('https://api.chucknorris.io/jokes/random').then(response => {
