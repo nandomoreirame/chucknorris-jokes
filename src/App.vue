@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="thumb">
-      <img src="./dist/assets/chucknorris.png">
+      <img src="./assets/chucknorris.png">
     </div>
     <h1 class="title">{{pageTitle}}</h1>
     <div class="joke">

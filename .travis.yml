@@ -5,12 +5,17 @@ node_js:
 branches:
   only:
     - master
-env:
-  global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-  - GH_USER="Fernando Moreira"
-  - GH_EMAIL="nandomoreira.me@gmail.com"
 cache:
   yarn: true
   directories:
     - "node_modules"
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  local_dir: dist
+  target_branch: gh-pages
+  name: Fernando Moreira
+  email: nandomoreira.me@gmail.com
+  on:
+    branch: gh-pages

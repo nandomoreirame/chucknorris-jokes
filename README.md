@@ -2,7 +2,7 @@
 
 > A Vue.js project
 
-![Chuck Norris jokes - A Vue.js project](/ChuckNorris.jokes.png)
+![Chuck Norris jokes - A Vue.js project](/dist/ChuckNorris.jokes.png)
 
 ## Build Setup
 
