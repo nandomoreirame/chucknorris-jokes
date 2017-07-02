@@ -1,4 +1,4 @@
-# Chuck Norris jokes [![Build Status](https://travis-ci.org/nandomoreirame/chucknorris.jokes.svg?branch=master)](https://travis-ci.org/nandomoreirame/chucknorris.jokes)
+# Chuck Norris jokes [![Build Status](https://travis-ci.org/nandomoreirame/chucknorris.jokes.svg?branch=master)](https://travis-ci.org/nandomoreirame/chucknorris.jokes) [![Code Climate](https://codeclimate.com/github/nandomoreirame/chucknorris-jokes/badges/gpa.svg)](https://codeclimate.com/github/nandomoreirame/chucknorris-jokes)
 
 > A Vue.js project
 
