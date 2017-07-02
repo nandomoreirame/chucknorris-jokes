@@ -1,4 +1,4 @@
-# chucknorris.vue
+# Chuck Norris jokes
 
 > A Vue.js project
 
