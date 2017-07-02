@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "watchify": "watchify -vd -p browserify-hmr -e src/main.js -o dist/assets/build.js",
-    "copy": "mkdir -p gh-pages && cp -R dist/ gh-pages/",
+    "copy": "cp -R dist/ gh-pages/",
     "serve": "http-server -o -c 1 -a localhost dist/",
     "dev": "npm-run-all --parallel watchify serve",
     "lint": "eslint --ext .js,.vue src",

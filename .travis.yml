@@ -9,7 +9,9 @@ cache:
   yarn: true
   directories:
     - "node_modules"
-script: yarn build
+before_script: "mkdir -p gh-pages"
+script: "yarn deploy"
+after_script: "ls -lah gh-pages/"
 deploy:
   provider: pages
   skip_cleanup: false
