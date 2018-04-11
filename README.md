@@ -1,6 +1,6 @@
 # Chuck Norris jokes [![Code Climate](https://codeclimate.com/github/nandomoreirame/chucknorris-jokes/badges/gpa.svg)](https://codeclimate.com/github/nandomoreirame/chucknorris-jokes) [![Issue Count](https://codeclimate.com/github/nandomoreirame/chucknorris-jokes/badges/issue_count.svg)](https://codeclimate.com/github/nandomoreirame/chucknorris-jokes)
 
-<a href="https://www.netlify.com">
+<a href="https://app.netlify.com/sites/chucknorris-jokes/deploys">
   <img src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg"/>
 </a>
 
