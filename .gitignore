@@ -61,3 +61,5 @@ typings/
 .next
 
 dist
+dist/assets/build.css
+dist/assets/build.js
