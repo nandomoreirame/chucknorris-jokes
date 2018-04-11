@@ -1,4 +1,8 @@
-# Chuck Norris jokes [![Build Status](https://travis-ci.org/nandomoreirame/chucknorris-jokes.svg?branch=master)](https://travis-ci.org/nandomoreirame/chucknorris-jokes) [![Code Climate](https://codeclimate.com/github/nandomoreirame/chucknorris-jokes/badges/gpa.svg)](https://codeclimate.com/github/nandomoreirame/chucknorris-jokes) [![Issue Count](https://codeclimate.com/github/nandomoreirame/chucknorris-jokes/badges/issue_count.svg)](https://codeclimate.com/github/nandomoreirame/chucknorris-jokes)
+# Chuck Norris jokes [![Code Climate](https://codeclimate.com/github/nandomoreirame/chucknorris-jokes/badges/gpa.svg)](https://codeclimate.com/github/nandomoreirame/chucknorris-jokes) [![Issue Count](https://codeclimate.com/github/nandomoreirame/chucknorris-jokes/badges/issue_count.svg)](https://codeclimate.com/github/nandomoreirame/chucknorris-jokes)
+
+<a href="https://www.netlify.com">
+  <img src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg"/>
+</a>
 
 > A Vue.js project
 
@@ -26,5 +30,3 @@ yarn test
 ### Copyright and license
 
 It is under [the MIT license](/LICENSE).
-
-
