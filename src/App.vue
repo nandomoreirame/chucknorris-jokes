@@ -29,15 +29,22 @@ export default {
 
 <template lang="html">
   <div id="app">
-    <cn-thumb></cn-thumb>
-    <cn-page-title></cn-page-title>
-    <cn-joke></cn-joke>
-    <cn-footer></cn-footer>
+    <div class="centered">
+      <cn-thumb></cn-thumb>
+      <cn-page-title></cn-page-title>
+      <cn-joke></cn-joke>
+      <cn-footer></cn-footer>
+    </div>
   </div>
 </template>
 
 <style>
 @import url('//fonts.googleapis.com/css?family=Open+Sans:400,700');
+html, body, #app {
+  width: 100%;
+  height: 100%;
+}
+
 html {
   font-size: 16px;
   box-sizing: border-box;
@@ -64,6 +71,12 @@ body {
 
 #app {
   padding: 5em 1em;
+  display: table;
+}
+
+.centered {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 a {
