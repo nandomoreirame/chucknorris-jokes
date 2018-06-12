@@ -20,7 +20,7 @@ export default {
       const { baseShareLink } = this.$store.state.links
       let url = encodeURI(`${window.location.href}`)
       let text = encodeURI(`${joke}`)
-      this.changeShareLink(`${baseShareLink}?url=${url}&text=${text}&hashtags=${shareHashtags}&via=umdevux`)
+      this.changeShareLink(`${baseShareLink}?url=${url}&text=${text}&hashtags=${shareHashtags}&via=oseunando`)
     },
     ...mapActions(['changeLoading', 'fetchJoke', 'changeShareLink'])
   },
