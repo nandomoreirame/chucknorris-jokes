@@ -1,3 +1,14 @@
+<template lang="html">
+  <div>
+    <div class="joke">
+      <cn-button></cn-button>
+      <p v-show="!isLoading">👊🏼 {{joke}} 👊🏼</p>
+      <cn-loading></cn-loading>
+    </div>
+    <cn-share></cn-share>
+  </div>
+</template>
+
 <script>
 import { mapActions, mapState } from 'vuex'
 import CnButton from './Button.vue'
@@ -15,14 +26,15 @@ export default {
     this.fetchJoke()
   },
   methods: {
+    ...mapActions(['changeLoading', 'fetchJoke', 'changeShareLink']),
     updateShareLink (joke) {
       const { shareHashtags } = this.$store.state
       const { baseShareLink } = this.$store.state.links
       let url = encodeURI(`${window.location.href}`)
       let text = encodeURI(`${joke}`)
+      console.log(`${baseShareLink}?url=${url}&text=${text}&hashtags=${shareHashtags}&via=oseunando`)
       this.changeShareLink(`${baseShareLink}?url=${url}&text=${text}&hashtags=${shareHashtags}&via=oseunando`)
-    },
-    ...mapActions(['changeLoading', 'fetchJoke', 'changeShareLink'])
+    }
   },
   beforeUpdate () {
     this.updateShareLink(this.$store.state.joke)
@@ -35,17 +47,6 @@ export default {
   }
 }
 </script>
-
-<template lang="html">
-  <div>
-    <div class="joke">
-      <cn-button></cn-button>
-      <p v-show="!isLoading">👊🏼 {{joke}} 👊🏼</p>
-      <cn-loading></cn-loading>
-    </div>
-    <cn-share></cn-share>
-  </div>
-</template>
 
 <style scoped>
 .joke {

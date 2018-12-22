@@ -1,3 +1,14 @@
+<template lang="html">
+  <div id="app">
+    <div class="centered">
+      <cn-thumb></cn-thumb>
+      <cn-page-title></cn-page-title>
+      <cn-joke></cn-joke>
+      <cn-footer></cn-footer>
+    </div>
+  </div>
+</template>
+
 <script>
 import Vue from 'vue'
 import axios from 'axios'
@@ -27,19 +38,9 @@ export default {
 }
 </script>
 
-<template lang="html">
-  <div id="app">
-    <div class="centered">
-      <cn-thumb></cn-thumb>
-      <cn-page-title></cn-page-title>
-      <cn-joke></cn-joke>
-      <cn-footer></cn-footer>
-    </div>
-  </div>
-</template>
-
 <style>
 @import url('//fonts.googleapis.com/css?family=Open+Sans:400,700');
+
 html, body, #app {
   width: 100%;
   height: 100%;
@@ -57,12 +58,12 @@ html {
 }
 
 body {
-  background-color: #f8f8f8;
+  background-color: #34404d;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 400;
   letter-spacing: .02rem;
   color: #34404d;
-  border: 5px solid #34404d;
+  padding: .625rem /* 10/16 */;
   font-size: 1rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -72,6 +73,7 @@ body {
 #app {
   padding: 5em 1em;
   display: table;
+  background-color: #f8f8f8;
 }
 
 .centered {
