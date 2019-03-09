@@ -29,7 +29,7 @@ yarn test
 
 ## History
 
-See [Releases](https://github.com/nandomoreirame/readme-boilerplate/releases) for detailed changelog.
+See [Releases](../../releases) for detailed changelog.
 
 ## Author
 
